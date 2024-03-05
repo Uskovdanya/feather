@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-roboto; /* добавляем шрифты */
+  }
+}
+@layer components {
+  .container {
+    @apply max-w-7xl; /* размер контейнера 1280px*/
+  }
+  .animationmode {
+    @apply animation-fill-mode: backwards;
+  }
+}
+
+@keyframes rigthMove {
+  from {
+    visibility: hidden;
+    margin-right: 120px;
+  }
+}

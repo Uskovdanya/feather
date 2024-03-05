@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Feather</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.svg" />
+  </head>
+  <body
+    class="text-prymery bg-white font-normal dark:bg-slate-700 dark:text-white"
+  >
+    <div class="container">
+      <nav
+        class="bg-background flex items-center justify-between pb-[18px] pl-[52.5px] pr-10 pt-8 text-base leading-5 sm:pl-6 sm:pr-6 dark:bg-slate-500"
+      >
+        <ul class="flex justify-center gap-9 sm:hidden md:gap-4">
+          <li class="hover:text-accent"><a href="#">Furniture</a></li>
+          <li class="hover:text-accent"><a href="#">Why Feather</a></li>
+          <li class="hover:text-accent">
+            <a href="#">Feather for Business</a>
+          </li>
+        </ul>
+
+        <a class="" href="#"
+          ><svg
+            class="sm:block sm:w-24 md:hidden"
+            width="116"
+            height="26"
+            viewBox="0 0 116 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="dark:fill-white"
+              d="M7.59623 8.13909H12.12V12.3646H7.59623V25.5334H2.47267V12.3646H0V8.13909H2.47267V7.36288C2.47267 5.01557 3.11461 3.20125 4.39822 1.91994C5.6821 0.638357 7.43215 -0.00162191 9.64756 3.08675e-06C10.8478 3.08675e-06 11.8035 0.187961 12.5141 0.563607V4.93242C11.9038 4.61522 11.2232 4.45632 10.5351 4.47038C9.78339 4.446 9.04637 4.68217 8.44925 5.13798C7.88094 5.58946 7.59651 6.34102 7.59651 7.39294L7.59623 8.13909ZM30.1421 21.3839C29.4357 22.7911 28.3375 23.9655 26.9788 24.7664C25.6023 25.5883 23.9593 26 22.0498 26C20.771 26.0151 19.501 25.7877 18.3074 25.33C17.215 24.9097 16.2222 24.2678 15.3919 23.445C14.5642 22.6148 13.9139 21.626 13.4802 20.5384C13.0099 19.3629 12.7737 18.1075 12.7847 16.842C12.7744 15.5931 13.0107 14.3543 13.4802 13.1964C13.919 12.1119 14.5678 11.1243 15.3897 10.29C16.2048 9.465 17.1781 8.81196 18.2517 8.36984C19.3885 7.90079 20.6086 7.66516 21.839 7.67705C23.0805 7.6635 24.3125 7.89913 25.4611 8.37011C26.5232 8.80447 27.4811 9.45795 28.2719 10.2876C29.0668 11.1389 29.685 12.1385 30.091 13.2289C30.5374 14.429 30.7589 15.7006 30.7446 16.9804C30.7446 17.2854 30.7446 17.5443 30.7283 17.7545C30.7204 17.9201 30.7026 18.0852 30.6751 18.2488H17.8439C17.8855 18.7428 18.0298 19.2228 18.2677 19.6582C18.5034 20.0831 18.818 20.4594 19.1949 20.767C19.5851 21.0857 20.027 21.3358 20.5016 21.5063C20.9938 21.6856 21.5143 21.7755 22.0381 21.772C23.0039 21.772 23.7694 21.5841 24.3347 21.2084C24.9261 20.8043 25.4207 20.275 25.783 19.6582L30.1421 21.3839ZM25.6903 14.9013C25.5933 14.0006 25.1497 13.1725 24.4529 12.591C23.88 12.1468 23.2028 11.8555 22.4855 11.7447C21.7682 11.634 21.0344 11.7074 20.3535 11.9581C19.4917 12.2986 18.7655 12.9112 18.2862 13.7023C18.0655 14.0672 17.9272 14.4756 17.8808 14.8991L25.6903 14.9013ZM51.3089 8.13909V25.5401H46.2547V23.2161C45.6497 24.1036 44.8132 24.8096 43.8355 25.2582C42.8233 25.7268 41.7187 25.9637 40.6027 25.9515C39.4746 25.9667 38.3573 25.7298 37.333 25.2582C36.3423 24.7959 35.4536 24.1418 34.7188 23.3339C33.9556 22.4918 33.3616 21.5114 32.9693 20.446C32.5379 19.2911 32.3219 18.0673 32.3319 16.835C32.3208 15.6087 32.5368 14.3908 32.9693 13.2427C33.3675 12.1794 33.9608 11.1992 34.7188 10.3523C35.4503 9.53785 36.3395 8.87933 37.333 8.41642C38.3564 7.94092 39.4737 7.70012 40.6027 7.71171C41.7156 7.70305 42.8176 7.93063 43.8355 8.37932C44.8162 8.81133 45.6547 9.51041 46.2547 10.3962V8.13909H51.3089ZM37.4558 16.8396C37.4499 17.4446 37.5706 18.0442 37.8103 18.6C38.0382 19.1302 38.3617 19.6142 38.7649 20.0279C39.1794 20.4494 39.6741 20.7843 40.2201 21.0129C40.766 21.2415 41.3522 21.3593 41.9443 21.3593C42.5365 21.3593 43.1226 21.2415 43.6686 21.0129C44.2145 20.7843 44.7092 20.4494 45.1237 20.0279C45.5263 19.6136 45.8499 19.1298 46.0786 18.6C46.3125 18.0424 46.433 17.444 46.433 16.8396C46.433 16.2352 46.3125 15.6368 46.0786 15.0792C45.8499 14.5495 45.5263 14.0658 45.1237 13.6516C44.7094 13.2298 44.2148 12.8947 43.6688 12.666C43.1229 12.4373 42.5366 12.3195 41.9445 12.3197C41.3523 12.3196 40.766 12.4374 40.22 12.6661C39.674 12.8948 39.1794 13.2299 38.7649 13.6516C38.3618 14.0652 38.0382 14.5491 37.8103 15.0792C37.5707 15.6351 37.45 16.2346 37.4558 16.8396ZM60.743 3.029V8.13936H65.16V12.3646H60.743V18.7411C60.743 19.6809 60.9492 20.3507 61.3618 20.7513C61.7742 21.1515 62.4085 21.3511 63.2643 21.3495C63.598 21.349 63.9303 21.3071 64.2537 21.2249C64.5844 21.1462 64.8984 21.0091 65.1809 20.8203V25.2585C64.7046 25.4731 64.2076 25.6388 63.6976 25.753C63.0013 25.9047 62.2898 25.9751 61.5773 25.9632C59.7389 25.9632 58.2896 25.4296 57.2298 24.362C56.1701 23.2949 55.6325 21.7853 55.617 19.8339V12.3646H53.1467V8.13936H55.617V3.02873L60.743 3.029ZM72.158 25.5401H66.9972V0.880211H72.158V10.3523C72.6784 9.52674 73.4019 8.84754 74.2598 8.37932C75.2035 7.89402 76.2552 7.65555 77.3166 7.68625C79.325 7.68625 80.8976 8.32082 82.0345 9.59021C83.1717 10.8591 83.7425 12.5973 83.7471 14.8043V25.5472H78.5888V15.9597C78.5888 14.8322 78.3177 13.9571 77.7754 13.335C77.2329 12.7126 76.4676 12.4047 75.4788 12.4109C75.0212 12.3918 74.5653 12.4769 74.1456 12.6599C73.726 12.8428 73.3538 13.1187 73.0572 13.4666C72.4576 14.1705 72.158 15.1214 72.158 16.3199V25.5401ZM102.687 21.3839C101.981 22.7905 100.884 23.9647 99.5261 24.7664C98.1466 25.5883 96.5028 26 94.5949 26C93.3153 26.0152 92.0444 25.7878 90.85 25.33C89.758 24.9092 88.7654 24.2674 87.9348 23.445C87.1086 22.6145 86.4597 21.6258 86.0275 20.5384C85.5562 19.3632 85.32 18.1076 85.3323 16.842C85.3206 15.593 85.5569 14.354 86.0275 13.1964C86.4654 12.112 87.1136 11.1244 87.9348 10.29C88.7502 9.46559 89.7233 8.81271 90.7965 8.37011C93.1114 7.45223 95.6909 7.45223 98.0059 8.37011C99.0645 8.80474 100.019 9.45829 100.805 10.2876C101.601 11.1382 102.219 12.138 102.624 13.2289C103.072 14.4288 103.294 15.7004 103.28 16.9804C103.28 17.2857 103.28 17.5443 103.262 17.7545C103.255 17.9202 103.237 18.0854 103.208 18.249H90.3912C90.4306 18.7433 90.5751 19.224 90.8152 19.6582C91.0499 20.0838 91.3646 20.4603 91.7421 20.7672C92.1331 21.0851 92.5749 21.3351 93.0491 21.5066C93.5411 21.6856 94.0616 21.7758 94.5856 21.772C95.5525 21.772 96.3189 21.5843 96.8845 21.2084C97.4758 20.8043 97.9704 20.275 98.3327 19.6582L102.687 21.3839ZM98.2354 14.9013C98.1383 14.0006 97.6947 13.1725 96.998 12.591C96.425 12.1467 95.7478 11.8554 95.0305 11.7447C94.3131 11.6339 93.5793 11.7074 92.8983 11.9581C92.0398 12.301 91.3172 12.9144 90.8408 13.7047C90.6211 14.0699 90.4827 14.478 90.4352 14.9013H98.2354ZM115.868 13.1403C115.453 12.9751 115.007 12.9027 114.561 12.928C113.124 12.928 112.005 13.4214 111.204 14.4089C110.402 15.3961 110.001 16.7462 110.003 18.4586V25.5396H104.879V8.13855H109.966V10.9918C110.401 10.0258 111.099 9.20119 111.982 8.61223C112.877 8.02953 113.926 7.7292 114.995 7.75044C115.177 7.75017 115.36 7.76182 115.541 7.78511C115.653 7.79459 115.763 7.81788 115.868 7.85444V13.1403Z"
+              fill="black"
+            /></svg
+        ></a>
+
+        <ul class="flex items-center justify-center sm:hidden md:gap-4">
+          <li class="hover:text-accent mr-14 md:mr-0">
+            <a href="#">Check if We Deliver</a>
+          </li>
+          <li class="hover:text-accent mr-[34px] md:mr-0">
+            <a href="">Search</a>
+          </li>
+          <li class="hover:text-accent mr-10 md:mr-0">
+            <a href="">Account</a>
+          </li>
+          <li class="">
+            <a class="" href="#"
+              ><img src="/icons/basket.svg" alt="basket"
+            /></a>
+          </li>
+        </ul>
+        <!-- burger -->
+        <div
+          id="burger"
+          class="group relative z-10 hidden h-5 w-[30px] cursor-pointer sm:block"
+        >
+          <span
+            class="absolute left-0 top-0 h-[1px] w-full translate-y-0 bg-black transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+          ></span>
+          <span
+            class="absolute left-0 top-1/2 h-[1px] w-full translate-y-0 bg-black group-[.active]:opacity-0"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 h-[1px] w-full bg-black transition-transform group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45"
+          ></span>
+        </div>
+        <!-- menu mobile -->
+        <nav
+          id="mobile"
+          class="bg-background fixed bottom-0 left-0 right-0 top-0 hidden items-center justify-center dark:bg-slate-500"
+        >
+          <ul class="flex flex-col items-center gap-10">
+            <li class="hover:text-accent">
+              <a href="#">Furniture</a>
+            </li>
+            <li class="hover:text-accent">
+              <a href="#">Why Feather</a>
+            </li>
+            <li class="hover:text-accent">
+              <a href="#">Feather for Business</a>
+            </li>
+            <li class="hover:text-accent mr-14 md:mr-0">
+              <a href="#">Check if We Deliver</a>
+            </li>
+            <li class="hover:text-accent mr-[34px] md:mr-0">
+              <a href="#">Search</a>
+            </li>
+            <li class="hover:text-accent mr-10 md:mr-0">
+              <a href="#">Account</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+
+      <div class="main">
+        <section
+          class="grid-cols-sectionOne bg-background xs:pb-0 grid gap-8 pb-9 pl-[98.5px] sm:grid-cols-1 sm:gap-0 md:pl-10 md:pr-10 md:pt-8 dark:bg-slate-500"
+        >
+          <div class="left animate-upmove flex flex-col justify-center">
+            <h1 class="text-[64px] leading-[76px] sm:text-center md:text-5xl">
+              Curated and Convenient
+            </h1>
+            <p class="mb-[46px] mt-[18px] text-lg leading-7">
+              We've built our offerings on the principle that everyone deserves
+              high-quality design without the high cost. We offer elevated
+              rental inventory, to transform your space. Reuse and recycle - we
+              make the decision as light as a “feather”
+            </p>
+            <div
+              class="button bg-accent h-[60px] w-[155px] cursor-pointer rounded-[30px] px-8 py-4 text-lg hover:-translate-y-1 hover:bg-orange-500 focus:bg-orange-500 active:translate-y-0 sm:w-full sm:text-center"
+            >
+              Get Started
+            </div>
+          </div>
+
+          <img
+            class="animate-rightmove w-full"
+            src="/img/section_one/1.png"
+            alt=""
+          />
+        </section>
+        <section class="bg-background pb-[71px] dark:bg-slate-500">
+          <h2 class="mb-[34px] text-center text-4xl leading-[54px] md:text-3xl">
+            Shop by Room
+          </h2>
+          <div class="flex justify-center gap-[34px] md:flex-wrap">
+            <div
+              class="border-border1 shadow-mainOne flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+            >
+              <img
+                class="h-[193px] w-[244px]"
+                src="/img/section_two/1.jpg"
+                alt="image"
+              />
+              <div class="text-center text-[17px] leading-7">Living Room</div>
+            </div>
+            <div
+              class="border-border2 shadow-mainTwo flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+            >
+              <img
+                class="h-[193px] w-[244px]"
+                src="/img/section_two/2.jpg"
+                alt="image"
+              />
+              <div class="text-center text-[17px] leading-7">Bedroom</div>
+            </div>
+            <div
+              class="border-border3 shadow-mainThree flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+            >
+              <img
+                class="h-[193px] w-[244px]"
+                src="/img/section_two/3.jpg"
+                alt="image"
+              />
+              <div class="text-center text-[17px] leading-7">Home Office</div>
+            </div>
+            <div
+              class="border-border4 shadow-mainFour flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+            >
+              <img
+                class="h-[193px] w-[244px]"
+                src="/img/section_two/4.jpg"
+                alt="image"
+              />
+              <div class="text-center text-[17px] leading-7">Dining Room</div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="xs:pb-2 px-[194px] pb-[94px] pt-[131px] sm:px-10 sm:py-10 md:px-36"
+        >
+          <h2 class="text-center text-4xl leading-[44px]">
+            “Keeping Furniture in Homes and out of Landfills."
+          </h2>
+          <p class="text-center text-2xl">
+            This isn’t just another rental company - We’re elevating the future
+            of furniture by replacing the commitment of ownership with a culture
+            of sharing in a way that’s curated, convenient, and sustainable.
+          </p>
+        </section>
+        <section class="xs:pt-2 xs:pb-5 pb-[223px] pt-8 sm:pb-5 md:pb-16">
+          <div
+            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[177px] pb-16 pl-[85px] sm:flex-wrap sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+          >
+            <div class="md:shrink-1 basis-[404px] sm:basis-full">
+              <h3 class="mb-5 text-center text-4xl leading-[44px]">
+                Enjoy a fully furnished space in less than week
+              </h3>
+              <p class="mb-[33px] text-lg leading-7">
+                Feather furniture is available to be delivered and assembled in
+                New York City, Los Angeles and San Francisco.
+              </p>
+              <a
+                class="text-accent text-lg leading-7 sm:text-center md:block"
+                href="#"
+                >Explore Furniture</a
+              >
+            </div>
+            <div class="shrink">
+              <img
+                class="object-cover"
+                src="/img/section_four/1.jpg"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div
+            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[131px] pb-16 sm:flex-wrap sm:items-center sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+          >
+            <div class="md:shrink-1 order-2 basis-[404px] sm:basis-full">
+              <h3 class="mb-5 text-center text-4xl leading-[44px]">
+                Garage Sale - 40% & Up
+              </h3>
+              <p class="mb-[33px] text-lg leading-7">
+                Our Garage Sale is open! Savings start at 40% on favorite
+                retired pieces. Find dressers, sofas, decor, and more to make
+                the year one to remember.
+              </p>
+              <a
+                class="text-accent text-lg leading-7 sm:text-center md:block"
+                href="#"
+                >Shop Now</a
+              >
+            </div>
+            <div class="ml-24 shrink sm:order-2 md:ml-0">
+              <img
+                class="object-cover"
+                src="/img/section_four/2.jpg"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div
+            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[141px] pb-16 pl-[85px] sm:flex-wrap sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+          >
+            <div class="md:shrink-1 basis-[404px] sm:basis-full">
+              <h3 class="mb-5 text-center text-4xl leading-[44px]">
+                Furniture for business, made simple.
+              </h3>
+              <p class="mb-[33px] text-lg leading-7">
+                Say goodbye to cost, complexity, and commitment of furniture.
+                Feather makes it easy with affordable rental plans, white glove
+                delivery and best-in-class account service.
+              </p>
+              <a
+                class="text-accent text-lg leading-7 sm:text-center md:block"
+                href="#"
+                >Visit Feather For Business</a
+              >
+            </div>
+            <div class="shrink">
+              <img
+                class="object-cover"
+                src="/img/section_four/3.jpg"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div
+            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[131px] pb-16 sm:flex-wrap sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+          >
+            <div
+              class="md:shrink-1 order-2 basis-[404px] sm:order-1 sm:basis-full"
+            >
+              <h3 class="mb-5 text-center text-4xl leading-[44px]">
+                Never assemble furniture again.
+              </h3>
+              <p class="mb-[33px] text-lg leading-7">
+                We move a lot. There are countless floor plans and roommates
+                (oh, and your evolving tastes) between here and there. With
+                Feather, furnish your space without breaking a sweat or reaching
+                for a screwdriver.
+              </p>
+              <a
+                class="text-accent text-lg leading-7 sm:text-center md:block"
+                href="#"
+                >How Feather Works</a
+              >
+            </div>
+            <div class="ml-24 shrink sm:order-1 md:ml-0">
+              <img
+                class="object-cover"
+                src="/img/section_four/4.jpg"
+                alt="img"
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-background xs:pb-5 xs:pt-5 pb-36 pt-28 md:pb-10 md:pt-16 dark:bg-slate-500"
+        >
+          <h3
+            class="left-11 mb-[57px] text-center text-4xl md:mb-[30px] md:text-3xl"
+          >
+            Shop our Bestsellers
+          </h3>
+          <div class="mb-[55px] flex justify-center gap-1 sm:mb-8 md:flex-wrap">
+            <div
+              class="bg-white px-8 pb-[69px] pt-10 sm:px-6 sm:pb-[30px] sm:pt-5"
+            >
+              <img src="/img/section_five/1.jpg" alt="" />
+              <div class="text-center text-lg">
+                <div class="dark:text-prymery pb-[9px]">
+                  Cooper Dining Table
+                </div>
+                <div class="dark:text-prymery">
+                  rent for
+                  <span class="text-accent text-base leading-7"
+                    ><span class="text-xl">$</span>15</span
+                  >/mo
+                </div>
+                <div class="dark:text-prymery">
+                  or buy for <span class="text-gray">$359</span>
+                </div>
+                <div>$314</div>
+              </div>
+            </div>
+            <div
+              class="bg-white px-8 pb-[69px] pt-10 sm:px-6 sm:pb-[30px] sm:pt-5"
+            >
+              <img src="/img/section_five/2.jpg" alt="" />
+              <div class="text-center text-lg">
+                <div class="dark:text-prymery pb-[9px]">
+                  Cooper Dining Table
+                </div>
+                <div class="dark:text-prymery">
+                  rent for
+                  <span class="text-accent text-base leading-7"
+                    ><span class="text-xl">$</span>15</span
+                  >/mo
+                </div>
+                <div class="dark:text-prymery">
+                  or buy for <span class="text-gray">$359</span>
+                </div>
+                <div>$314</div>
+              </div>
+            </div>
+            <div
+              class="bg-white px-8 pb-[69px] pt-10 sm:px-6 sm:pb-[30px] sm:pt-5"
+            >
+              <img src="/img/section_five/3.jpg" alt="" />
+              <div class="text-center text-lg">
+                <div class="dark:text-prymery pb-[9px]">
+                  Cooper Dining Table
+                </div>
+                <div>
+                  rent for
+                  <span class="text-accent text-base leading-7"
+                    ><span class="text-xl">$</span>15</span
+                  >/mo
+                </div>
+                <div class="dark:text-prymery">
+                  or buy for <span class="text-gray">$359</span>
+                </div>
+                <div>$314</div>
+              </div>
+            </div>
+            <div
+              class="bg-white px-8 pb-[69px] pt-10 sm:px-6 sm:pb-[30px] sm:pt-5"
+            >
+              <img src="/img/section_five/4.jpg" alt="" />
+              <div class="text-center text-lg">
+                <div class="dark:text-prymery pb-[9px]">
+                  Cooper Dining Table
+                </div>
+                <div>
+                  rent for
+                  <span class="text-accent text-base leading-7"
+                    ><span class="text-xl">$</span>15</span
+                  >/mo
+                </div>
+                <div class="dark:text-prymery">
+                  or buy for <span class="text-gray">$359</span>
+                </div>
+                <div>$314</div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="text-accent block text-center text-lg leading-7"
+            >Shop All Furniture</a
+          >
+        </section>
+        <section
+          class="grid-cols-sectionSix xs:pb-5 grid items-center justify-center pb-[143px] md:grid-cols-1 md:gap-4 md:px-4 md:pb-16"
+        >
+          <div class="mx-auto block w-[832px] md:mx-auto md:w-full">
+            <img
+              src="/img/section_six/1.jpg"
+              alt="img"
+              class="block object-cover md:w-full"
+            />
+          </div>
+          <div
+            class="bg-accent flex w-[448px] flex-col place-self-stretch px-[42px] py-[60px] sm:px-6 sm:py-6 md:mx-auto md:w-full dark:bg-slate-400"
+          >
+            <img
+              src="/icons/featherMinLogo.svg"
+              alt=""
+              class="mx-auto mb-6 h-[18px] w-36"
+            />
+            <h3
+              class="mb-8 text-center text-4xl leading-[44px] text-white md:text-3xl"
+            >
+              Floyd Furniture Meets Feather Flexibility
+            </h3>
+            <button
+              class="dark:bg-accent mx-auto h-[60px] w-[272px] cursor-pointer rounded-[88px] bg-white px-10 py-4 text-lg"
+            >
+              Explore Floyd Furniture
+            </button>
+          </div>
+        </section>
+        <section class="xs:pb-12 pb-44 pl-[118px] sm:pl-10 md:pb-24">
+          <div
+            class="mb-[57px] pr-11 text-center text-5xl leading-[54px] sm:mb-6 md:mb-9 md:text-4xl"
+          >
+            The Reviews are In
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper flex">
+              <div
+                class="swiper-slide border-accent shadow-reviewsOne h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+              >
+                <div class="mb-[26px] flex">
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="mb-[30px] text-[17px] leading-7">
+                  Honestly BEST EXPERIENCE moving ever.
+                </div>
+                <div class="text-base">- Julie, San Francisco, CA</div>
+              </div>
+              <div
+                class="swiper-slide border-border2 shadow-reviewsTwo h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-[45px] pt-[34px]"
+              >
+                <div class="mb-[26px] flex">
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#E7CB43"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#E7CB43"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#E7CB43"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#E7CB43"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#E7CB43"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="mb-[30px] text-[17px] leading-7">
+                  Extremely easy! Browsed for furniture and it was in my new
+                  apartment within a week.
+                </div>
+                <div class="text-base">- Anthony, Los Angeles, CA</div>
+              </div>
+              <div
+                class="swiper-slide border-border3 shadow-reviewsThree h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+              >
+                <div class="mb-[26px] flex">
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#A2D4C5"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#A2D4C5"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#A2D4C5"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#A2D4C5"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#A2D4C5"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="mb-[30px] text-[17px] leading-7">
+                  THIS JUST MAKES SENSE. Truly obsessed with Feather.
+                </div>
+                <div class="text-base">- Wesley, New Yourk City, NY</div>
+              </div>
+              <div
+                class="swiper-slide border-border3 shadow-reviewsThree h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+              >
+                <div class="mb-[26px] flex">
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="mb-[30px] text-[17px] leading-7">
+                  THIS JUST MAKES SENSE. Truly obsessed with Feather.
+                </div>
+                <div class="text-base">- Wesley, New Yourk City, NY</div>
+              </div>
+              <div
+                class="swiper-slide border-border3 shadow-reviewsThree h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+              >
+                <div class="mb-[26px] flex">
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_921)">
+                      <path
+                        d="M12.198 0L15.568 7.437L23.8 8.292L17.651 13.742L19.368 21.708L12.198 17.64L5.028 21.708L6.746 13.743L0.597 8.292L8.828 7.437L12.198 0Z"
+                        fill="#CBC6F4"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_921">
+                        <rect width="24" height="22" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <div class="mb-[30px] text-[17px] leading-7">
+                  THIS JUST MAKES SENSE. Truly obsessed with Feather.
+                </div>
+                <div class="text-base">- Wesley, New Yourk City, NY</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-pink mx-auto px-32 pb-[102px] pt-[39px] sm:pb-12 md:px-24 md:pb-20 dark:bg-slate-300"
+        >
+          <h2
+            class="xs:text-3xl mx-auto mb-[41px] max-w-[913px] text-center text-[88px] leading-[100px] sm:text-4xl md:text-6xl"
+          >
+            Ease the pain of moving from <br />
+            apartment to apartment.
+          </h2>
+          <div
+            class="flex items-center justify-between md:flex-wrap md:justify-center md:gap-5"
+          >
+            <img src="/icons/section_seven/1.svg" alt="img" />
+            <img src="/icons/section_seven/2.svg" alt="img" />
+            <img src="/icons/section_seven/3.svg" alt="img" />
+            <img src="/icons/section_seven/4.svg" alt="img" />
+            <img src="/icons/section_seven/5.svg" alt="img" />
+          </div>
+        </section>
+        <section
+          class="xs:py-10 flex flex-col items-center py-[120px] sm:py-14 md:py-24"
+        >
+          <img
+            class="mb-[41px] w-[264px] md:w-[220px]"
+            src="/icons/section_eight/1.svg"
+            alt="img"
+          />
+          <div class="mb-[39px] text-center text-2xl md:px-5">
+            Feather is the stress-free way to furnish your home
+          </div>
+          <button
+            class="button bg-accent mx-auto block h-[60px] w-[202px] cursor-pointer rounded-[88px] px-8 py-4 text-lg hover:-translate-y-1 hover:bg-orange-500 focus:bg-orange-500 active:translate-y-0"
+          >
+            Shop Furniture
+          </button>
+        </section>
+        <footer
+          class="bg-footer relative flex flex-wrap gap-[81px] px-20 pb-52 pt-[82px] sm:justify-center sm:gap-10 sm:pt-11 md:px-16 md:pb-20 dark:bg-slate-500"
+        >
+          <ul class="xs:text-center">
+            <li class="mb-6">
+              <a class="mb-6 text-base tracking-[1.25px]" href="">Furniture</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Packages</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Living Room</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Bedroom</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Dining</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="text-base" href="#">Home Office</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Dining</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Decor</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Lighting</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Outdoor</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">All Furniture</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Sample Sale</a>
+            </li>
+          </ul>
+          <ul class="xs:text-center">
+            <li class="mb-6">
+              <a class="text-base tracking-[1.25px]" href="">About</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">How it Works</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">About Feather</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Feather Furniture</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Reviews</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Feather for WeWork</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Feather for Business</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Feather for Staging</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Affiliate Program</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Careers</a>
+            </li>
+            <li class="text-base">
+              <a class="" href="#">In Your Area</a>
+            </li>
+          </ul>
+          <ul class="xs:text-center">
+            <li class="mb-6">
+              <a class="text-base tracking-[1.25px]" href="">Help</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">FAQs</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Contact us</a>
+            </li>
+
+            <li class="mb-2 text-base">
+              <a class="" href="#">Privacy Policy</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">Terms</a>
+            </li>
+            <li class="mb-2 text-base">
+              <a class="" href="#">FloorFound Terms</a>
+            </li>
+          </ul>
+          <div>
+            <div class="mb-6 text-base sm:text-center">
+              Feather on Social Media
+            </div>
+            <div class="mb-[54px] flex gap-4 sm:flex-wrap sm:justify-center">
+              <div
+                class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border"
+              >
+                <img src="/icons/footer/1.svg" alt="mail" />
+              </div>
+              <div
+                class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border"
+              >
+                <img src="/icons/footer/2.svg" alt="mail" />
+              </div>
+              <div
+                class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border"
+              >
+                <img src="/icons/footer/3.svg" alt="mail" />
+              </div>
+              <div
+                class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border"
+              >
+                <img src="/icons/footer/4.svg" alt="mail" />
+              </div>
+              <div
+                class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border"
+              >
+                <img src="/icons/footer/5.svg" alt="mail" />
+              </div>
+              <div
+                class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border"
+              >
+                <img src="/icons/footer/6.svg" alt="mail" />
+              </div>
+            </div>
+            <div
+              class="after:border-1 text-base tracking-[1.25px] after:mt-[60px] after:block after:w-[294px] after:border after:border-solid sm:text-center md:after:mx-auto"
+            >
+              Join our newsletter
+            </div>
+          </div>
+          <a class="absolute bottom-20 right-20 sm:hidden" href="#"
+            ><img class="" src="/icons/footer/door.svg" alt="door"
+          /></a>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
