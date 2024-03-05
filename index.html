@@ -19,16 +19,16 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" type="image/png" href="icons/basket.svg" />
   </head>
   <body
-    class="text-prymery bg-white font-normal dark:bg-slate-700 dark:text-white"
+    class="bg-white font-normal text-prymery dark:bg-slate-700 dark:text-white"
   >
     <div class="container">
       <nav
-        class="bg-background flex items-center justify-between pb-[18px] pl-[52.5px] pr-10 pt-8 text-base leading-5 sm:pl-6 sm:pr-6 dark:bg-slate-500"
+        class="flex items-center justify-between bg-background pb-[18px] pl-[52.5px] pr-10 pt-8 text-base leading-5 sm:pl-6 sm:pr-6 dark:bg-slate-500"
       >
-        <ul class="flex justify-center gap-9 sm:hidden md:gap-4">
+        <ul class="flex justify-center gap-9 md:gap-4 sm:hidden">
           <li class="hover:text-accent"><a href="#">Furniture</a></li>
           <li class="hover:text-accent"><a href="#">Why Feather</a></li>
           <li class="hover:text-accent">
@@ -38,7 +38,7 @@
 
         <a class="" href="#"
           ><svg
-            class="sm:block sm:w-24 md:hidden"
+            class="md:hidden sm:block sm:w-24"
             width="116"
             height="26"
             viewBox="0 0 116 26"
@@ -52,14 +52,14 @@
             /></svg
         ></a>
 
-        <ul class="flex items-center justify-center sm:hidden md:gap-4">
-          <li class="hover:text-accent mr-14 md:mr-0">
+        <ul class="flex items-center justify-center md:gap-4 sm:hidden">
+          <li class="mr-14 hover:text-accent md:mr-0">
             <a href="#">Check if We Deliver</a>
           </li>
-          <li class="hover:text-accent mr-[34px] md:mr-0">
+          <li class="mr-[34px] hover:text-accent md:mr-0">
             <a href="">Search</a>
           </li>
-          <li class="hover:text-accent mr-10 md:mr-0">
+          <li class="mr-10 hover:text-accent md:mr-0">
             <a href="">Account</a>
           </li>
           <li class="">
@@ -86,7 +86,7 @@
         <!-- menu mobile -->
         <nav
           id="mobile"
-          class="bg-background fixed bottom-0 left-0 right-0 top-0 hidden items-center justify-center dark:bg-slate-500"
+          class="fixed bottom-0 left-0 right-0 top-0 hidden items-center justify-center bg-background dark:bg-slate-500"
         >
           <ul class="flex flex-col items-center gap-10">
             <li class="hover:text-accent">
@@ -98,13 +98,13 @@
             <li class="hover:text-accent">
               <a href="#">Feather for Business</a>
             </li>
-            <li class="hover:text-accent mr-14 md:mr-0">
+            <li class="mr-14 hover:text-accent md:mr-0">
               <a href="#">Check if We Deliver</a>
             </li>
-            <li class="hover:text-accent mr-[34px] md:mr-0">
+            <li class="mr-[34px] hover:text-accent md:mr-0">
               <a href="#">Search</a>
             </li>
-            <li class="hover:text-accent mr-10 md:mr-0">
+            <li class="mr-10 hover:text-accent md:mr-0">
               <a href="#">Account</a>
             </li>
           </ul>
@@ -113,10 +113,10 @@
 
       <div class="main">
         <section
-          class="grid-cols-sectionOne bg-background xs:pb-0 grid gap-8 pb-9 pl-[98.5px] sm:grid-cols-1 sm:gap-0 md:pl-10 md:pr-10 md:pt-8 dark:bg-slate-500"
+          class="grid grid-cols-sectionOne gap-8 bg-background pb-9 pl-[98.5px] md:pl-10 md:pr-10 md:pt-8 sm:grid-cols-1 sm:gap-0 xs:pb-0 dark:bg-slate-500"
         >
-          <div class="left animate-upmove flex flex-col justify-center">
-            <h1 class="text-[64px] leading-[76px] sm:text-center md:text-5xl">
+          <div class="left flex animate-upmove flex-col justify-center">
+            <h1 class="text-[64px] leading-[76px] md:text-5xl sm:text-center">
               Curated and Convenient
             </h1>
             <p class="mb-[46px] mt-[18px] text-lg leading-7">
@@ -126,14 +126,14 @@
               make the decision as light as a “feather”
             </p>
             <div
-              class="button bg-accent h-[60px] w-[155px] cursor-pointer rounded-[30px] px-8 py-4 text-lg hover:-translate-y-1 hover:bg-orange-500 focus:bg-orange-500 active:translate-y-0 sm:w-full sm:text-center"
+              class="button h-[60px] w-[155px] cursor-pointer rounded-[30px] bg-accent px-8 py-4 text-lg hover:-translate-y-1 hover:bg-orange-500 focus:bg-orange-500 active:translate-y-0 sm:w-full sm:text-center"
             >
               Get Started
             </div>
           </div>
 
           <img
-            class="animate-rightmove w-full"
+            class="w-full animate-rightmove"
             src="/img/section_one/1.png"
             alt=""
           />
@@ -144,7 +144,7 @@
           </h2>
           <div class="flex justify-center gap-[34px] md:flex-wrap">
             <div
-              class="border-border1 shadow-mainOne flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+              class="flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid border-border1 shadow-mainOne"
             >
               <img
                 class="h-[193px] w-[244px]"
@@ -154,7 +154,7 @@
               <div class="text-center text-[17px] leading-7">Living Room</div>
             </div>
             <div
-              class="border-border2 shadow-mainTwo flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+              class="flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid border-border2 shadow-mainTwo"
             >
               <img
                 class="h-[193px] w-[244px]"
@@ -164,7 +164,7 @@
               <div class="text-center text-[17px] leading-7">Bedroom</div>
             </div>
             <div
-              class="border-border3 shadow-mainThree flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+              class="flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid border-border3 shadow-mainThree"
             >
               <img
                 class="h-[193px] w-[244px]"
@@ -174,7 +174,7 @@
               <div class="text-center text-[17px] leading-7">Home Office</div>
             </div>
             <div
-              class="border-border4 shadow-mainFour flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid"
+              class="flex h-[257px] w-[248px] flex-col gap-[15px] rounded border-2 border-solid border-border4 shadow-mainFour"
             >
               <img
                 class="h-[193px] w-[244px]"
@@ -186,7 +186,7 @@
           </div>
         </section>
         <section
-          class="xs:pb-2 px-[194px] pb-[94px] pt-[131px] sm:px-10 sm:py-10 md:px-36"
+          class="px-[194px] pb-[94px] pt-[131px] md:px-36 sm:px-10 sm:py-10 xs:pb-2"
         >
           <h2 class="text-center text-4xl leading-[44px]">
             “Keeping Furniture in Homes and out of Landfills."
@@ -197,9 +197,9 @@
             of sharing in a way that’s curated, convenient, and sustainable.
           </p>
         </section>
-        <section class="xs:pt-2 xs:pb-5 pb-[223px] pt-8 sm:pb-5 md:pb-16">
+        <section class="pb-[223px] pt-8 md:pb-16 sm:pb-5 xs:pb-5 xs:pt-2">
           <div
-            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[177px] pb-16 pl-[85px] sm:flex-wrap sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+            class="flex items-center justify-between gap-[177px] pb-16 pl-[85px] md:gap-20 md:pl-10 md:pr-10 sm:flex-wrap sm:justify-center sm:gap-10 xs:gap-5 xs:pb-4"
           >
             <div class="md:shrink-1 basis-[404px] sm:basis-full">
               <h3 class="mb-5 text-center text-4xl leading-[44px]">
@@ -210,7 +210,7 @@
                 New York City, Los Angeles and San Francisco.
               </p>
               <a
-                class="text-accent text-lg leading-7 sm:text-center md:block"
+                class="text-lg leading-7 text-accent md:block sm:text-center"
                 href="#"
                 >Explore Furniture</a
               >
@@ -224,7 +224,7 @@
             </div>
           </div>
           <div
-            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[131px] pb-16 sm:flex-wrap sm:items-center sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+            class="flex items-center justify-between gap-[131px] pb-16 md:gap-20 md:pl-10 md:pr-10 sm:flex-wrap sm:items-center sm:justify-center sm:gap-10 xs:gap-5 xs:pb-4"
           >
             <div class="md:shrink-1 order-2 basis-[404px] sm:basis-full">
               <h3 class="mb-5 text-center text-4xl leading-[44px]">
@@ -236,12 +236,12 @@
                 the year one to remember.
               </p>
               <a
-                class="text-accent text-lg leading-7 sm:text-center md:block"
+                class="text-lg leading-7 text-accent md:block sm:text-center"
                 href="#"
                 >Shop Now</a
               >
             </div>
-            <div class="ml-24 shrink sm:order-2 md:ml-0">
+            <div class="ml-24 shrink md:ml-0 sm:order-2">
               <img
                 class="object-cover"
                 src="/img/section_four/2.jpg"
@@ -250,7 +250,7 @@
             </div>
           </div>
           <div
-            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[141px] pb-16 pl-[85px] sm:flex-wrap sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+            class="flex items-center justify-between gap-[141px] pb-16 pl-[85px] md:gap-20 md:pl-10 md:pr-10 sm:flex-wrap sm:justify-center sm:gap-10 xs:gap-5 xs:pb-4"
           >
             <div class="md:shrink-1 basis-[404px] sm:basis-full">
               <h3 class="mb-5 text-center text-4xl leading-[44px]">
@@ -262,7 +262,7 @@
                 delivery and best-in-class account service.
               </p>
               <a
-                class="text-accent text-lg leading-7 sm:text-center md:block"
+                class="text-lg leading-7 text-accent md:block sm:text-center"
                 href="#"
                 >Visit Feather For Business</a
               >
@@ -276,7 +276,7 @@
             </div>
           </div>
           <div
-            class="xs:gap-5 xs:pb-4 flex items-center justify-between gap-[131px] pb-16 sm:flex-wrap sm:justify-center sm:gap-10 md:gap-20 md:pl-10 md:pr-10"
+            class="flex items-center justify-between gap-[131px] pb-16 md:gap-20 md:pl-10 md:pr-10 sm:flex-wrap sm:justify-center sm:gap-10 xs:gap-5 xs:pb-4"
           >
             <div
               class="md:shrink-1 order-2 basis-[404px] sm:order-1 sm:basis-full"
@@ -291,12 +291,12 @@
                 for a screwdriver.
               </p>
               <a
-                class="text-accent text-lg leading-7 sm:text-center md:block"
+                class="text-lg leading-7 text-accent md:block sm:text-center"
                 href="#"
                 >How Feather Works</a
               >
             </div>
-            <div class="ml-24 shrink sm:order-1 md:ml-0">
+            <div class="ml-24 shrink md:ml-0 sm:order-1">
               <img
                 class="object-cover"
                 src="/img/section_four/4.jpg"
@@ -306,25 +306,25 @@
           </div>
         </section>
         <section
-          class="bg-background xs:pb-5 xs:pt-5 pb-36 pt-28 md:pb-10 md:pt-16 dark:bg-slate-500"
+          class="bg-background pb-36 pt-28 md:pb-10 md:pt-16 xs:pb-5 xs:pt-5 dark:bg-slate-500"
         >
           <h3
             class="left-11 mb-[57px] text-center text-4xl md:mb-[30px] md:text-3xl"
           >
             Shop our Bestsellers
           </h3>
-          <div class="mb-[55px] flex justify-center gap-1 sm:mb-8 md:flex-wrap">
+          <div class="mb-[55px] flex justify-center gap-1 md:flex-wrap sm:mb-8">
             <div
               class="bg-white px-8 pb-[69px] pt-10 sm:px-6 sm:pb-[30px] sm:pt-5"
             >
               <img src="/img/section_five/1.jpg" alt="" />
               <div class="text-center text-lg">
-                <div class="dark:text-prymery pb-[9px]">
+                <div class="pb-[9px] dark:text-prymery">
                   Cooper Dining Table
                 </div>
                 <div class="dark:text-prymery">
                   rent for
-                  <span class="text-accent text-base leading-7"
+                  <span class="text-base leading-7 text-accent"
                     ><span class="text-xl">$</span>15</span
                   >/mo
                 </div>
@@ -339,12 +339,12 @@
             >
               <img src="/img/section_five/2.jpg" alt="" />
               <div class="text-center text-lg">
-                <div class="dark:text-prymery pb-[9px]">
+                <div class="pb-[9px] dark:text-prymery">
                   Cooper Dining Table
                 </div>
                 <div class="dark:text-prymery">
                   rent for
-                  <span class="text-accent text-base leading-7"
+                  <span class="text-base leading-7 text-accent"
                     ><span class="text-xl">$</span>15</span
                   >/mo
                 </div>
@@ -359,12 +359,12 @@
             >
               <img src="/img/section_five/3.jpg" alt="" />
               <div class="text-center text-lg">
-                <div class="dark:text-prymery pb-[9px]">
+                <div class="pb-[9px] dark:text-prymery">
                   Cooper Dining Table
                 </div>
                 <div>
                   rent for
-                  <span class="text-accent text-base leading-7"
+                  <span class="text-base leading-7 text-accent"
                     ><span class="text-xl">$</span>15</span
                   >/mo
                 </div>
@@ -379,12 +379,12 @@
             >
               <img src="/img/section_five/4.jpg" alt="" />
               <div class="text-center text-lg">
-                <div class="dark:text-prymery pb-[9px]">
+                <div class="pb-[9px] dark:text-prymery">
                   Cooper Dining Table
                 </div>
                 <div>
                   rent for
-                  <span class="text-accent text-base leading-7"
+                  <span class="text-base leading-7 text-accent"
                     ><span class="text-xl">$</span>15</span
                   >/mo
                 </div>
@@ -395,12 +395,12 @@
               </div>
             </div>
           </div>
-          <a href="#" class="text-accent block text-center text-lg leading-7"
+          <a href="#" class="block text-center text-lg leading-7 text-accent"
             >Shop All Furniture</a
           >
         </section>
         <section
-          class="grid-cols-sectionSix xs:pb-5 grid items-center justify-center pb-[143px] md:grid-cols-1 md:gap-4 md:px-4 md:pb-16"
+          class="grid grid-cols-sectionSix items-center justify-center pb-[143px] md:grid-cols-1 md:gap-4 md:px-4 md:pb-16 xs:pb-5"
         >
           <div class="mx-auto block w-[832px] md:mx-auto md:w-full">
             <img
@@ -410,7 +410,7 @@
             />
           </div>
           <div
-            class="bg-accent flex w-[448px] flex-col place-self-stretch px-[42px] py-[60px] sm:px-6 sm:py-6 md:mx-auto md:w-full dark:bg-slate-400"
+            class="flex w-[448px] flex-col place-self-stretch bg-accent px-[42px] py-[60px] md:mx-auto md:w-full sm:px-6 sm:py-6 dark:bg-slate-400"
           >
             <img
               src="/icons/featherMinLogo.svg"
@@ -423,22 +423,22 @@
               Floyd Furniture Meets Feather Flexibility
             </h3>
             <button
-              class="dark:bg-accent mx-auto h-[60px] w-[272px] cursor-pointer rounded-[88px] bg-white px-10 py-4 text-lg"
+              class="mx-auto h-[60px] w-[272px] cursor-pointer rounded-[88px] bg-white px-10 py-4 text-lg dark:bg-accent"
             >
               Explore Floyd Furniture
             </button>
           </div>
         </section>
-        <section class="xs:pb-12 pb-44 pl-[118px] sm:pl-10 md:pb-24">
+        <section class="pb-44 pl-[118px] md:pb-24 sm:pl-10 xs:pb-12">
           <div
-            class="mb-[57px] pr-11 text-center text-5xl leading-[54px] sm:mb-6 md:mb-9 md:text-4xl"
+            class="mb-[57px] pr-11 text-center text-5xl leading-[54px] md:mb-9 md:text-4xl sm:mb-6"
           >
             The Reviews are In
           </div>
           <div class="swiper">
             <div class="swiper-wrapper flex">
               <div
-                class="swiper-slide border-accent shadow-reviewsOne h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+                class="swiper-slide h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid border-accent pl-[34px] pr-16 pt-[34px] shadow-reviewsOne"
               >
                 <div class="mb-[26px] flex">
                   <svg
@@ -544,7 +544,7 @@
                 <div class="text-base">- Julie, San Francisco, CA</div>
               </div>
               <div
-                class="swiper-slide border-border2 shadow-reviewsTwo h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-[45px] pt-[34px]"
+                class="swiper-slide h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid border-border2 pl-[34px] pr-[45px] pt-[34px] shadow-reviewsTwo"
               >
                 <div class="mb-[26px] flex">
                   <svg
@@ -651,7 +651,7 @@
                 <div class="text-base">- Anthony, Los Angeles, CA</div>
               </div>
               <div
-                class="swiper-slide border-border3 shadow-reviewsThree h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+                class="swiper-slide h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid border-border3 pl-[34px] pr-16 pt-[34px] shadow-reviewsThree"
               >
                 <div class="mb-[26px] flex">
                   <svg
@@ -757,7 +757,7 @@
                 <div class="text-base">- Wesley, New Yourk City, NY</div>
               </div>
               <div
-                class="swiper-slide border-border3 shadow-reviewsThree h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+                class="swiper-slide h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid border-border3 pl-[34px] pr-16 pt-[34px] shadow-reviewsThree"
               >
                 <div class="mb-[26px] flex">
                   <svg
@@ -863,7 +863,7 @@
                 <div class="text-base">- Wesley, New Yourk City, NY</div>
               </div>
               <div
-                class="swiper-slide border-border3 shadow-reviewsThree h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid pl-[34px] pr-16 pt-[34px]"
+                class="swiper-slide h-[254px] w-[396px] gap-8 rounded-[4px] border-2 border-solid border-border3 pl-[34px] pr-16 pt-[34px] shadow-reviewsThree"
               >
                 <div class="mb-[26px] flex">
                   <svg
@@ -972,10 +972,10 @@
           </div>
         </section>
         <section
-          class="bg-pink mx-auto px-32 pb-[102px] pt-[39px] sm:pb-12 md:px-24 md:pb-20 dark:bg-slate-300"
+          class="mx-auto bg-pink px-32 pb-[102px] pt-[39px] md:px-24 md:pb-20 sm:pb-12 dark:bg-slate-300"
         >
           <h2
-            class="xs:text-3xl mx-auto mb-[41px] max-w-[913px] text-center text-[88px] leading-[100px] sm:text-4xl md:text-6xl"
+            class="mx-auto mb-[41px] max-w-[913px] text-center text-[88px] leading-[100px] md:text-6xl sm:text-4xl xs:text-3xl"
           >
             Ease the pain of moving from <br />
             apartment to apartment.
@@ -991,7 +991,7 @@
           </div>
         </section>
         <section
-          class="xs:py-10 flex flex-col items-center py-[120px] sm:py-14 md:py-24"
+          class="flex flex-col items-center py-[120px] md:py-24 sm:py-14 xs:py-10"
         >
           <img
             class="mb-[41px] w-[264px] md:w-[220px]"
@@ -1002,13 +1002,13 @@
             Feather is the stress-free way to furnish your home
           </div>
           <button
-            class="button bg-accent mx-auto block h-[60px] w-[202px] cursor-pointer rounded-[88px] px-8 py-4 text-lg hover:-translate-y-1 hover:bg-orange-500 focus:bg-orange-500 active:translate-y-0"
+            class="button mx-auto block h-[60px] w-[202px] cursor-pointer rounded-[88px] bg-accent px-8 py-4 text-lg hover:-translate-y-1 hover:bg-orange-500 focus:bg-orange-500 active:translate-y-0"
           >
             Shop Furniture
           </button>
         </section>
         <footer
-          class="bg-footer relative flex flex-wrap gap-[81px] px-20 pb-52 pt-[82px] sm:justify-center sm:gap-10 sm:pt-11 md:px-16 md:pb-20 dark:bg-slate-500"
+          class="relative flex flex-wrap gap-[81px] bg-footer px-20 pb-52 pt-[82px] md:px-16 md:pb-20 sm:justify-center sm:gap-10 sm:pt-11 dark:bg-slate-500"
         >
           <ul class="xs:text-center">
             <li class="mb-6">
@@ -1141,7 +1141,7 @@
               </div>
             </div>
             <div
-              class="after:border-1 text-base tracking-[1.25px] after:mt-[60px] after:block after:w-[294px] after:border after:border-solid sm:text-center md:after:mx-auto"
+              class="after:border-1 text-base tracking-[1.25px] after:mt-[60px] after:block after:w-[294px] after:border after:border-solid md:after:mx-auto sm:text-center"
             >
               Join our newsletter
             </div>
